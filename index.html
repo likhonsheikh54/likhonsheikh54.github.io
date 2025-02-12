@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Generations - Rich Improvements</title>
+    <script src="https://raw.githubusercontent.com/likhonsheikh54/likhonsheikh54.github.io/refs/heads/main/rich-Improvements.js" 
+            onload="scriptLoaded()" 
+            onerror="scriptFailed()"></script>
+    <script>
+        // Function to check if the script has loaded successfully
+        function scriptLoaded() {
+            console.log('%c SEO Generations Script Loaded Successfully!', 'color: green; font-weight: bold;');
+            document.body.insertAdjacentHTML('beforeend', '<p style="color: green; font-weight: bold;">Script Loaded Successfully!</p>');
+        }
+
+        // Function to handle errors if the script fails to load
+        function scriptFailed() {
+            console.log('%c Error: SEO Generations Script Failed to Load!', 'color: red; font-weight: bold;');
+            document.body.insertAdjacentHTML('beforeend', '<p style="color: red; font-weight: bold;">Error: Script Failed to Load!</p>');
+        }
+
+        // Track performance of the loaded script
+        window.onload = function() {
+            setTimeout(() => {
+                if (window.performance) {
+                    const { timing } = window.performance;
+                    const loadTime = timing.loadEventEnd - timing.navigationStart;
+                    console.log('%c Page Load Time: ' + loadTime + ' ms', 'color: blue;');
+                    document.body.insertAdjacentHTML('beforeend', `<p>Page Load Time: ${loadTime} ms</p>`);
+                }
+            }, 500);
+        };
+
+        // Check if script execution works by showing logs
+        console.log('%c SEO Generations - Rich Improvements Script Monitoring Initialized', 'color: purple;');
+    </script>
+</head>
+<body>
+    <h1>SEO Generations - Rich Improvements</h1>
+    <p>This is a demonstration of how to use the rich improvements JavaScript file for SEO optimizations, security enhancements, and more.</p>
+</body>
+</html>
